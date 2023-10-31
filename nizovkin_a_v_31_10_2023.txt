@@ -1,0 +1,1000 @@
+nano index.html
+cd ..
+ll
+nano docker-compose.yaml 
+docker-compose -d up
+docker-compose ps
+docker-compose stop
+ll
+docker-compose up -d
+cd src
+ll
+sudo cmod 777 index.html 
+ll
+rm index.html 
+ll
+touch index.html
+ll
+nano index.html
+cd ..
+docker-compose ps
+docker-compose stop
+docker-compose start
+cd src/
+nano index.html
+docker-compose stop
+docker-compose ps
+docker ps -a
+docker ps
+cd ..
+ll
+mkdir nginx-conf
+cd nginx-conf
+ll
+touch nginx.conf
+ll
+cat /etc/nginx/nginx.conf 
+clear
+ll
+nano nginx.conf 
+cd ..
+docker compose ps
+docker-compose ps
+docker-compose stop
+ll
+docker search php-fpm
+cd ~
+ll
+mkdir wordpress | cd wordpress
+mkdir wordpress && cd wordpress
+ll
+cd wordpress
+ll
+mkdir nginx-conf
+cp /home/andrew/homework8/nginx-conf/nginx.conf /home/andrew/wordpress/nginx-conf/nginx.conf
+nano nginx-conf/nginx.conf 
+cd ..
+cd homework8/
+ll
+docker-compose ps
+docker-compose stop
+docker-compose rm
+docker-compose ps
+docker ps -a
+cd ..
+cd wordpress/
+ll
+nano .env
+LL
+ll
+git init
+nano .gitignore
+ll
+nano .dockerignore
+ll
+nano .dockerignore
+nano nginx-conf/nginx.conf 
+ll
+nano docker-compose.yml
+cat .env
+nano docker-compose.yml
+ll
+nano docker-compose.yml
+docker-compose up -d
+nano docker-compose.yml
+docker-compose up -d
+docker-compose ps
+docker-compose stop
+docker-compose ps
+sudo apt purge nginx
+sudo apt autoremove
+sudo ss -ntlp
+ll
+docker-compose up -d
+sudo reboot
+docker ps
+docker-compose stop
+exit
+cd /home/andrew/wordpress/
+ll
+docker-compose stop
+docker-compose rm
+docker-compose ps
+docker ps-a
+sudo docker ps-a
+sudo docker ps -a
+ll
+cudo nginx-conf/
+ll
+cd nginx-conf/
+ll
+nano nginx.conf 
+nginx -t
+cd ..
+clear
+ll
+nano .env
+docker-compose up
+ll
+cd nginx-conf/
+ll
+nano nginx.conf 
+cd ..
+nano docker-compose.yml 
+nano .env 
+ll
+dosker-compose ps
+docker-compose ps
+nano docker-compose.yml 
+docker-compose stop
+docker-compose start
+docker-compose stop
+docker-compose up
+docker-compose start
+docker-compose stop
+ll
+nano .env 
+nano docker-compose.yml 
+docker-compose start
+nano docker-compose.yml 
+docker-compose start
+nano docker-compose.yml 
+nginx -t
+docker-compose stop
+docker-compose rm
+docker-compose up
+nano docker-compose.yml 
+docker-compose stop
+docker-compose start
+docker-compose stop
+docker-compose rm
+docker-compose ps
+docker-compose up
+ss -ntlp
+ll
+cd nginx-conf/
+nano nginx.conf 
+docker-compose ps
+docker-compose stop
+docker-compose start
+nano nginx.conf 
+docker-compose PS
+docker-compose ps
+docker-compose stop
+docker-compose rm
+sudo reboot
+cd /home/andrew/wordpress/
+ll
+docker-compose up
+docker-compose stop
+docker-compose rm
+sudo ss -ntlp
+cd ~
+sudo dpkg -l
+sudo apt remove mysgl
+sudo ss -ntlp
+sudo apt remove mysql
+sudo apt remove mysqld
+sudo search mysql
+sudo apt search mysql
+exit
+sudo apt purge mysql-server-8.0
+sudo ss -ntlp
+cd /home/andrew/wordpress/
+ll
+nano docker-compose.yml 
+docker-compose up
+ll
+nano .env
+docker-compose stop
+docker-compose start
+docker-compose stop
+nano nginx-conf/nginx.conf 
+docker-compose rm
+nano .env 
+nano docker-compose.yml 
+docker-compose up
+nano docker-compose.yml 
+nano .env 
+docker-compose stop
+docker-compose rm
+docker-compose up
+docker-compose stop
+docker-compose rm
+nano nginx-conf/nginx.conf 
+docker-compose up
+docker-compose stop
+docker-compose rm
+sudo update
+sudo apt update
+sudo apt upgrade
+docker-compose up
+docker-compose stop
+nano docker-compose.yml 
+nano nginx-conf/nginx.conf 
+docker-compose rm
+docker-compose up
+docker ps
+docker-compose start
+docker ps
+docker-compose stop
+docker-compose rm
+exit
+exi
+exit
+sudo mysql
+sudo update | sudo upgrade
+sudo apt update | sudo apt upgrade
+y
+sudo apt update
+sudo apt list --upgradable
+sudo apt upgrade
+sudo mysql
+docker ps -a
+sudo ps
+sudo ps -f
+sudo ss -ntlp
+sudo apt install mysql-server-8.0
+sudo mysql
+exit
+ll
+cd Test/
+ll
+nano sql.sql
+sudo mysql
+exit
+cd Test/
+ll
+nano sql.sql 
+exit
+cd Test/
+nano sql.sql 
+cat sql.sql 
+nano sql.sql 
+exit
+sudo mysql
+exit
+sudo ss -ntlp
+docker
+docker --version
+docker ps
+docker images
+cudo mysql
+sudo mysql
+sudo apt apdate
+sudo apt update
+sudo apt upgrade
+exit
+sudo apt update
+sudo apt upgrade
+sudo ss -ntlp
+ll
+cd /
+ll
+cat /proc/sys/kernel/pid_max 
+ps
+top
+uname -s
+uname -n
+uname -r
+uname -v
+uname -p
+uname -i
+uname -o
+uname -a
+cal
+ls -li
+umask
+exit
+ip a
+sudo ip link add veth0 type veth peer name veth1
+ip a
+sudo ip link veth1 netns ns1
+sudo ip link set veth1 netns ns1
+ip a
+sudo ip addr add 10.0.0.1/24 dev veth0
+sudo ip link set dev veth0 up
+ip a
+ping 10.0.0.2
+cd /proc$$/ns
+cd /proc/$$/ns
+ls -l
+cd /proc/$$/ns
+ll -l
+sudo upshare --pid --net --fork --mount-proc bash
+ll -l
+sudo unshare --pid --net --fork --mount-proc bash
+exit
+ll
+clear
+mkdir NewRoot
+ll
+chroot /home/andrew/NewRoot/
+sudo chroot /home/andrew/NewRoot/
+cd /proc/
+ls -l
+cd 8
+ll
+cd `
+cd ~
+cd ..
+cd ~
+ll
+ls -l
+sudo chroot ./NewRoot/ /bin/bash
+dll /bin/bash
+ldd /bin/bash
+mkdir NewRoot/bin
+mkdir NewRoot/lib
+mkdir NewRoot/lib64
+cp /bin/bash NewRoot/bin/
+cp /lib/x86_64-linux-gnu/libtinfo.so.6 NewRoot/lib/
+cp /lib/x86_64-linux-gnu/libc.so.6 NewRoot/lib/
+cp /lib64/ld-linux-x86-64.so.2 NewRoot/lib64/
+sudo chroot ./NewRoot/ /bin/bash
+whereis ls
+ip a
+man ip
+sudo ip netns add ns1
+sudo ip netns list
+sudo ip netns exec ns1 bash
+exti
+exit
+ll
+clear
+uname -a
+uname -o
+sudo unshare --net bash
+ip a
+clear
+man ip
+ip f
+ip -p
+clear
+cd /proc/$$/ns
+ll 
+cd /proc/
+ll
+cd ~
+clear
+cd /dev/sda
+/dev/sda
+sudo /dev/sda
+cat /dev/sda
+sudo cat /dev/sda
+clear
+cd /proc/fs/cgroup/
+/sys/fs/
+cd /sys/fs/
+ll
+cd cgroup/
+ll
+mkdir test1
+sudo mkdir test1
+ll
+cd test1/
+ll
+sudo apt install cgroup-tools
+exit
+cd /
+ls -l
+sudo lxc-cgroup -n my-lcx-test1 memory.max 256
+ip a
+cd /sys/fs/cgroup/
+ll
+cd lxc.monitor.my-lcx-test1/
+ll
+cat memory.max
+cd ..
+ll
+cd lxc.payload.my-lcx-test1/
+ll
+cat memory.max
+sudo cat /var/lib/lxc/my-lcx-test1/config
+sudo nano /var/lib/lxc/my-lcx-test1/config
+lxc-stop -n my-lcx-test1
+lxc-start -d -n my-lcx-test1
+sudo lxc-start -d -n my-lcx-test1
+sudo lxc-stop -n my-lcx-test1
+sudo lxc-start -d -n my-lcx-test1
+sudo lxc-attach -m my-lcx-test1
+sudo lxc-attach -n my-lcx-test1
+lxc-ls -f
+sudo lxc-attach -n my-lcx-test1
+sudo nano /var/lib/lxc/my-lcx-test1/config
+sudo lxc-ls -f
+sudo lxc-stop -n my-lcx-test1
+sudo lxc-start -d -n my-lcx-test1
+sudo lxc-ls -f
+reboot
+sudo lxc-ls -f
+sudo nano /var/lib/lxc/my-lcx-test1/config
+sudo lxc-stop -n my-lcx-test1
+sudo lxc-start -n my-lcx-test1 --logfile log.log
+cat log.log 
+sudo cat log.log 
+ll
+sudo nano log.log 
+sudo lxc-destroy -n my-lcx-test1
+sudo lxc-ls -f
+sudo lxc-stop -n my-lcx-test1
+sudo lxc-destroy -n my-lcx-test1
+exit
+docker --version
+docker ps
+docker ps -a
+docker info
+docker run hello-world
+docker ps
+docker ps -a
+docker ps -aq
+docker rmi $(docker ps -aq)
+docker rmi $(docker ps -aq) -f
+docker ps -a
+docker system prune -af
+docker ps -a
+clear
+exit
+docker ps -a
+docker images
+docker image ls
+ll
+mkdir mymariadb
+ls -l
+cd mymariadb/
+pwd
+sudo apt update
+clear
+docker run --name mariadb-container -d -v /home/andrew/mymariadb:/var/lib/mysql -e MARIADB_ROOT_PASSWORD=0208 mariadb:10.10.2
+docker ps
+docker exec -it 06cf624b02eb bash
+docker ps
+sudo ss ntlp
+sudo ss -ntlp
+docker run --name myphpmyadmin -d --link mariadb-container:db -p 8080:80 phpmyadmin
+docker ps
+docker run --name myphpmyadmin -d --link mariadb-container:db -p 8081:80 phpmyadmin
+docker ps -a
+docker rmi myphpmyadmin -f
+docker rmi 6edd75854bdb -f
+docker run --name phpmyadmin -d --link mariadb-container:db -p 8081:80 phpmyadmin
+docker ps
+docker stop $(docker ps -aq)
+docker ps
+docker ps -a
+docker system prune -af
+docker ps -a
+ls -l
+cd ..
+ls -l
+rm mymariadb/
+sudo rm -r mymariadb/
+ls -l
+ls
+ls -l
+exit
+ll
+clear
+ls -l
+cd mymariadb/
+ls -l
+exit
+mkdir my_postgres
+ls -l
+docker run --name my_postgres -e POSTGRES_PASSWORD=0208 -d postgres:11-alpine
+docker ps
+docker exec -it 4a596d15edb3 bash
+docker ps
+docker run --link my_postgres:db -p 8080:8080 adminer:standalone
+docker ps
+docker run --link my_postgres:db -p 8081:8080 adminer:standalone
+docker ps
+docker run --link my_postgres:db -p 8081:8080 adminer
+docker ps
+docker stop $(docker ps -aq)
+docker ps
+docker ps -a
+docker system prune -af
+docker ps -a
+exit
+ls -l
+cd Test/
+pwd
+ll -l
+cd ..
+ll
+ls -l
+cat NewDir
+cd NewDir/
+ll
+cd ..
+rm -r NewDir/
+cd NewRoot/
+ls -l
+cd ..
+rm NewRoot
+rm -r NewRoot
+ls -l
+cd Homework3
+ls -l
+cd ..
+ls -l
+mkdir docker-ex
+cd docker
+ls -l
+ll
+cd ..
+ls -l
+rm -r docker-ex
+ll -l
+clear
+ls -l
+cd docker/
+nano Dockerfile
+vi
+ls -l
+ll
+ls -l
+docker build -t cowsaytest
+docker build -t cowsaytest .
+docker ps
+docker ps -a
+sudo apt update
+nano Dockerfile
+docker build -t cowsaytest .
+nano Dockerfile
+docker build -t cowsaytest .
+docker ps
+docker images
+docker run -it cowsaytest bash
+docker run cowsaytest cowsay "asdfasdf"
+nano Dockerfile
+docker build -t cowsaytest .
+docker ps
+docker images
+nano Dockerfile
+docker build -t cowsaytest .
+docker run cawsaytest
+docker run cowsaytest
+docker run cowsaytest cowsay "asefaswef"
+nano Dockerfile
+docker build -t cowsaytest .
+docker images
+nano Dockerfile
+docker build -t cowsaytest .
+docker images
+nano Dockerfile
+docker build -t cowsaytest .
+nano Dockerfile
+docker build -t cowsaytest .
+nano Dockerfile
+docker build -t cowsaytest .
+docker images
+docker run cowsaytest cawsay "Hello"
+docker run cowsaytest cowsay "Hello"
+docker ps
+docker ps -a
+nano Dockerfile
+mkdir docker_4
+cd docker_4/
+nano Dockerfile
+ls -l
+nano Dockerfile
+docker build -t my-program .
+nano Dockerfile
+docker build -t my-program .
+nano Dockerfile
+docker build -t my-program .
+docker images
+docker run -d my-program
+docker ps
+docker run -it my-program
+docker run my-program
+docker run -it my-program bash
+ls -l
+docker run -it my-program bash
+nano Dockerfile
+docker build -t my-program .
+nano Dockerfile
+ls -l
+nano Dockerfile
+docker build -t my-program .
+nano Dockerfile
+docker build -t my-program .
+docker run -it my_program bash
+docker build -t my-program .
+docker images
+nano Dockerfile
+docker build -t my-program .
+docker run -it my_program bash
+nano Dockerfile
+docker build -t my-program .
+docker run -it my_program bash
+docker run -d my_program
+docker run -it my-program bash
+pwd
+docker run -d my-program
+nano Dockerfile
+docker run -it my-program bash
+ls -p
+ls -l
+nano Dockerfile
+docker build -t my-program .
+docker run -it my-program bash
+nano Dockerfile
+docker build -t my-program .
+docker run -it my-program bash
+nano Dockerfile
+docker build -t my-program .
+nano Dockerfile
+docker build -t my-program .
+docker run -it my-program bash
+nano Dockerfile
+docker build -t my-program .
+docker run -it my-program bash
+nano Dockerfile
+docker build -t my-program .
+docker run -it my-program bash
+docker run my-program
+nano Dockerfile
+docker run my-program
+nano Dockerfile
+docker build -t my-program .
+docker run my-program
+docker ps
+docker images
+docker prune -af
+docker system prune -af
+docker images
+clear
+exit
+ls -l
+cd docker/
+ls -l
+cd docker_4
+ls -s
+ls -l
+nano Dockerfile
+nano Program.java
+nano Dockerfile
+docker build -t myapp-container .
+docker images
+docker run -d myapp-container
+docker run  myapp-container
+docker ps
+docker ps -a
+docker system prune -af
+docker ps -a
+exit
+cd docker/docker_4/
+nano Dockerfile 
+docker build -t myapp
+docker build -t myapp .
+docker images
+docker run myapp
+nano Dockerfile 
+docker run myapp
+docker ps
+docker ps -a
+docker system prune -af
+exit
+docker-compose ps
+docker-compose -ps
+docker-compose ps
+exit
+docker ps -a
+docker --version
+docker-compose ps
+docker compose ps
+sudo apt update
+cd docker/
+ls -l
+rm Dockerfile 
+ls -l
+sudo apt install docker-compose
+clear
+ls -l
+mkdir docker_5
+ls -l
+cd docker_5
+ls -l
+nano docker-compose.yaml
+docker compose up
+docker-compose up
+nano docker-compose.yaml
+docker-compose up
+nano docker-compose.yaml
+ls -l
+nano Dockerfile
+ls -l
+nano docker-compose.yaml
+docker-compose up
+nano docker-compose.yaml
+docker-compose up
+docker-compose ps
+docker-compose stop
+docker-compose ps
+docker-compose down
+docker-compose ps
+nano docker-compose.yaml 
+docker-compose up
+docker-compose ps
+docker ps
+docker ps a
+docker ps -a
+docker-compose down
+docker ps -a
+docker compose up
+nano docker-compose.yaml 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+ls -l
+nano docker-compose.yaml 
+nano Dockerfile 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+docker ps
+docker ps -a
+nano docker-compose.yaml 
+docker compose down
+docker-compose down
+nano docker-compose.yaml 
+docker-compose down
+nano docker-compose.yaml 
+docker-compose down
+nano docker-compose.yaml 
+docker-compose up
+docker-compose down
+docker system prune -af
+docker-compose up
+ls -l
+pwd
+nano docker-compose.yaml 
+docker-compose up
+docker build -t my-container
+docker build -t my-container .
+docker ps
+docker ps -a
+docker images
+docker system prune -af
+docker images
+nano docker-compose.yaml 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+nano docker-compose.yaml 
+cat ./Dockerfile 
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+ss -ntlp
+sudo ss -ntlp
+docker system prune -af
+nano docker-compose.yaml 
+docker-compose up
+docker system prune -af
+sudo ss -ntlp
+sudo apt remove mysql-server-8.0
+sudo apt autoremove
+sudo ss -ntlp
+sudo remove apache2
+sudo apt remove apache2
+sudo apt autoremove
+nano docker-compose.yaml 
+docker-compose up
+docker system prune -af
+sudo reboot
+cd docker/docker_
+cd docker/docker_5
+ls -l
+nano docker-compose.yaml 
+docker-compose up
+docker ps -a
+docker-compose up
+nano docker-compose.yaml 
+docker-compose up
+docker-compose start
+docker ps
+docker-compose down
+docker ps
+docker ps -a
+docker images
+docker system prune -af
+docker images
+exit
+ls -s
+ls -l
+cd Test/
+ls -l
+cd ..
+mkdir gb_final_control_work
+cd gb_final_control_work
+ls -l
+cat >> Pets dogs, cats, hamsters
+cat >> Pets "dogs, cats, hamsters"
+ls -l
+cat dog, cat, hamster >> Pets 
+cat "dog, cat, hamster" >> Pets 
+ls -l
+nano Pets
+cat "dog, cat, hamster" > Pets 
+cat > Pets dog, cat, hamster
+cat > Pets 'dog, cat, hamster'
+cat sdsfsed > Pets
+cat --help
+cat man
+man cat
+cat Pets 
+cat > Pets 
+cat Pets
+cat > Packanimals
+cat Packanimals 
+nano Packanimals 
+cat Pets 
+cat Packanimals 
+rm Packanimals 
+ls -l
+cat > Packanimals
+cat Packanimals
+cat Pets | cat Packanimals 
+cat Pets
+cat Pets | cat Packanimals 
+ls -l
+rm Pets 
+rm Packanimals 
+ls -l
+cat > Pets.txt
+cat Pets.txt 
+cat > Packanimals.txt
+cat Packanimals.txt
+cat Pets.txt Packanimals.txt > NewFile.txt
+cat NewFile.txt 
+mv NewFile.txt HumanFriends.txt
+ls -l
+mkdir NewDir
+mv HumanFriends.txt ./NewDir/HumanFriends.txt
+ls -l
+cd newDir
+ls -l
+cd NewDir/
+ls -l
+ss -ntlp
+mysql --version
+ls -
+ls -l
+cd ..
+ls -l
+cat Pets.txt | cat Packanimals.txt 
+cat Pets.txt; cat Packanimals.txt 
+/etc/apt/sources.list
+sudo /etc/apt/sources.list
+cd /etc/apt/
+ls -l
+sudo nano sources.list
+cd sources.list.d/
+ls -l
+cd .
+cd ..
+ls -l
+sudo nano sources.list
+sudo dpkg -l
+ls -l
+sudo apt search mysql
+sudo apt list mysql
+mc
+wget --version
+echo uname -a
+uname -a
+ununtu --version
+ubuntu --version
+wget https://dev.mysql.com/downloads/file/?id=523391
+mc
+ls -l
+cd Загрузки/
+ls -l
+cd /ls -l
+wget mysql-apt-config_0.8.28-1_all.deb
+wget https://dev.mysql.com/downloads/repo/apt/mysql-apt-config_0.8.28-1_all.deb
+sudo apt list
+ls -l
+sudo dpkg -i mysql-apt-config_0.8.28-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+systemctl status mysql
+history
+mysql
+sudo mysql
+history --help
+cd ~
+history -w history.txt
+ls -l
+cat history.txt 
+cd /etc/apt/
+ls -l
+sudo nano sources.list
+cowsay --version
+mc
+cd 
+cd ~
+mc
+ls -l
+cd Загрузки/
+ls -l
+sudo dpkg -i virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb 
+sudo apt -f install
+sudo dpkg -r virtualbox
+sudo dpkg -r virtualbox-7.0_7.0.12
+sudo dpkg -r virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb 
+sudo dpkg -r virtualbox-7.0_7.0.12-159484
+sudo apt list virtualbox
+sudo  dpkg -r virtualbox
+sudo dpkg -r virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+sudo apt purge virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+sudo apt purge virtualbox
+sudo apt purge virtualbox-7.0_7.0.12-159484
+sudo apt purge virtualbox-7.0
+exit
+mysql --version
+cd Загрузки/
+ls -l
+sudo dpkg -r mysql-apt-config_0.8.28-1_all.deb
+sudo dpkg -r mysql-apt-config_0.8.28-1
+sudo dpkg -r mysql
+sudo dpkg -r mysql-apt-config
+mysql --version
+sudo apt purge mysql
+sudo apt autoremove
+mysql --version
+sudo mysql
+sudo apt list mysql-server
+sudo apt purge mysql-server
+mysql --version
+sudo mysql
+docker ps
+docker ps -a
+ss -ntlp
+sudo ss -ntlp
+sudo apt remove mysql
+sudo apt remove mysql-server
+sudo apt list
+sudo apt list mysql
+mysql version
+mysql --version
+sudo apt remove mysql-8.0.35
+sudo reboot
+sudo mysql
+sudo apt remove mysql-server-8.0
+sudo apt autoremove
+mysql --version
+cd /etc/apt/
+ls -l
+cd sources.list.d/
+ls -l
+nano mysql.list 
+sudo apt update
+ls -l
+sudo rm mysql.list 
+ls -l
+cd ..
+ls -l
+cd ~
+cd Загрузки/
+ls -l
+sudo dpkg -i mysql-apt-config*
+sudo apt update
+sudo dpkg-reconfigure mysql-apt-config
+sudo apt update
+sudo apt install mysgl-server
+sudo apt install mysql-server
+systemctl status mysql
+sudo mysql
+cd ..
+cd gb_final_control_work/
+ls -l
+history -w ./nizovkin_a_v_31_10_2023.txt
