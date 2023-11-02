@@ -1,0 +1,9 @@
+./.gitignore
+./..gitignore.swp
+./.git/
+./AnimalRegistry/.idea/
+./AnimalRegistry/pom.xml
+./AnimalRegistry/target/
+./AnimalRegistry/src/test/
+*.class
+
