@@ -88,10 +88,11 @@ public class AnimalsControllerDefault implements AnimalsController {
     }
 
     /**
-     * Appends demo-list to animal list
+     * Loads demo-list to animal list
      */
     @Override
     public void LoadDemoAnimalList() {
+        animals.clear();
         List<String> list = ioController.readFile("./animals.txt");
         String separator = ",";
         String[] array;
