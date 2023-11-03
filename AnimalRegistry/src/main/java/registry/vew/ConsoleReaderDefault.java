@@ -4,7 +4,7 @@ import registry.presenter.ConsoleReader;
 
 import java.util.Scanner;
 
-public class ConsoleReader1 implements ConsoleReader {
+public class ConsoleReaderDefault implements ConsoleReader {
     @Override
     public String getStringFromConsole(String message) {
         System.out.print(message + "-> ");
@@ -21,7 +21,7 @@ public class ConsoleReader1 implements ConsoleReader {
     @Override
     public int getNumberFromConsole(String message) {
         String input = getStringFromConsole(message);
-        while (!input.matches("[0-9]")) {
+        while (!input.matches("[0-9]*")) {
             System.out.println("Введите натуральное число");
             input = getStringFromConsole(message);
         }

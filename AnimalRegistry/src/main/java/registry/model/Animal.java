@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Animal {
-    private String name;
-    private String birthDate;
-    private List<String> commands;
+    private final String name;
+    private final String birthDate;
+    private final List<String> commands;
+    private static int counter;
 
     /**
      * Constructor
@@ -17,8 +18,16 @@ public abstract class Animal {
         this.name = name;
         this.birthDate = birthDate;
         this.commands = new ArrayList<>();
+        counter ++;
     }
 
+    /**
+     * Gets count added Animals
+     * @return int
+     */
+    public static int getCounter() {
+        return counter;
+    }
     /**
      * Gets animal name
      * @return String
@@ -54,10 +63,14 @@ public abstract class Animal {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(getTypeAnimal() + " ");
-        stringBuilder.append(name + " ");
-        stringBuilder.append(birthDate + " ");
-        commands.forEach(x -> stringBuilder.append(x + " "));
+        stringBuilder.append("class: ").append(getTypeAnimal()).append(" ");
+        stringBuilder.append("name: ").append(name).append(" ");
+        stringBuilder.append("birthDate: ").append(birthDate).append(" ");
+        stringBuilder.append("commands: ");
+        for (int i = 0; i < commands.size(); i++) {
+            stringBuilder.append(commands.get(i));
+            if (i < commands.size() - 1) stringBuilder.append(", ");
+        }
         return stringBuilder.toString();
     }
 }

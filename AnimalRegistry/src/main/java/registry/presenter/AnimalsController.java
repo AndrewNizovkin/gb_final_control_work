@@ -8,10 +8,9 @@ public interface AnimalsController {
 
     /**
      * Adds new Animal to registry
-     * @param name animal name
-     * @param birthDate animal birthdate
+     * @param line "name typeAnimal birthDate command1 command2"
      */
-    void addAnimal(int typeAnimal, String name, String birthDate);
+    void addAnimal(String line);
 
     /**
      * Adds new commands to animal with index in animal list
@@ -22,9 +21,8 @@ public interface AnimalsController {
 
     /**
      * Sort animal list
-     * @param sortMode sort mode
      */
-    void sortAnimals(int sortMode);
+    void sortAnimals();
 
     /**
      * print animal list
@@ -32,9 +30,8 @@ public interface AnimalsController {
     void printAnimalList();
 
     /**
-     * Gets demonstration animal list
-     * @return List
+     * Loads animal list with demo
      */
-    List<Animal> getDemoAnimalList();
+    void LoadDemoAnimalList();
 
 }

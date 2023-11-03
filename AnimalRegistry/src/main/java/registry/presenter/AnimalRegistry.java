@@ -1,47 +1,54 @@
 package registry.presenter;
 
 import registry.model.Animal;
-import registry.vew.AnimalsController1;
-import registry.vew.ConsoleReader1;
-
+import registry.vew.AnimalsControllerDefault;
+import registry.vew.ConsoleReaderDefault;
 import java.util.LinkedList;
 import java.util.List;
 
 public class AnimalRegistry {
-    private List<Animal> animals;
-    private ConsoleReader consoleReader;
-    private AnimalsController animalsController;
+    private final List<Animal> animals;
+    private final ConsoleReader consoleReader;
+    private final AnimalsController animalsController;
 
     /**
      * Constructor
      */
     public AnimalRegistry() {
         animals = new LinkedList<>();
-        consoleReader = new ConsoleReader1();
-        animalsController = new AnimalsController1(animals);
+        consoleReader = new ConsoleReaderDefault();
+        animalsController = new AnimalsControllerDefault(animals);
     }
 
     /**
      * Starts program
      */
     public void run() {
-        int choice = menu();
+        int index;
+        int choice = menuMain();
         while (choice != 0) {
             switch (choice) {
                 case 1 -> {
-                    System.out.println("choice: 1");
+                    animalsController.addAnimal(consoleReader.getStringFromConsole("Enter data separated by a space:\n" +
+                            "name\ntypeAnimal: (Dog, Cat, Hamster, Camel, Horse, Donkey)\nbirthDate: YYYY-MM-DD\n" +
+                            "commands: commands separated by a space\n"));
                 }
                 case 2 -> {
-                    System.out.println("choice: 2");
+                    animalsController.LoadDemoAnimalList();
+                    animalsController.printAnimalList();
                 }
                 case 3 -> {
-                    System.out.println("choice: 3");
+                    index = consoleReader.getNumberFromConsole("Enter <index> animal");
+                    if (index < animals.size()) {
+                        animalsController.addCommands(consoleReader.getStringFromConsole("Enter commands " +
+                                "separated by a space").split(" "), index);
+                    }
                 }
                 case 4 -> {
-                    System.out.println("choice: 4");
+                    animalsController.sortAnimals();
                 }
             }
-            choice = menu();
+            choice = menuMain();
         }
         System.out.println("The End.");
     }
@@ -50,8 +57,14 @@ public class AnimalRegistry {
      * Main menu
      * @return int user choice
      */
-    private int menu() {
-        return consoleReader.getNumberFromConsole("[0] Exit    [1] Add Animal  [2] Load Demo\n[3] Change" +
-                "  [4] Sort\n");
+    private int menuMain() {
+        animalsController.printAnimalList();
+        System.out.println("-".repeat(45));
+        System.out.println("total number of animals: <" + Animal.getCounter() + ">");
+        System.out.println("-".repeat(45));
+        return consoleReader.getNumberFromConsole("[0] Exit    [1] Add Animal      [2] Load Demo\n[3] Change" +
+                "  [4] Sort BirthDate\n");
     }
+
+
 }

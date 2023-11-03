@@ -147,7 +147,7 @@ cat ./nizovkin_a_v_31_10_2023.txt
 > 7.2   - В ранее подключенном MySQL создать базу данных с названием "HumanFriends".
 > - Заполнить таблицы данными о животных, их командах и датами рождения.
 
-_Далее в тексте показаны фрагменты файла HumanFriend.sql_
+_Далее в тексте показаны фрагменты файла [HumanFriend.sql](./files/HumanFriends.sql)_
 
 ```sql
 DROP DATABASE IF EXISTS HumanFriends;
@@ -310,5 +310,4 @@ SELECT * FROM SummaryTable;
 > 9.6. Счетчик животных
 > - Создать механизм, который позволяет вывести на экран общее количество созданных животных любого типа (Как домашних, так и вьючных), то есть при создании каждого нового животного счетчик увеличивается на “1”. 
 
-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
-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
+[Исходный код программы](./AnimalRegistry/src/main/java)
