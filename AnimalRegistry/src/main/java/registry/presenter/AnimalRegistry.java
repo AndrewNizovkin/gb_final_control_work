@@ -20,6 +20,12 @@ public class AnimalRegistry {
         animalsController = new AnimalsControllerDefault(animals);
     }
 
+    public AnimalRegistry(List<Animal> animals, ConsoleReader consoleReader, AnimalsController animalsController) {
+        this.animals = animals;
+        this.consoleReader = consoleReader;
+        this.animalsController = animalsController;
+    }
+
     /**
      * Starts program
      */
